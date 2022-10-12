@@ -5,9 +5,14 @@ import android.util.Log;
 public class Cat {
     int age;
     String name;
-
+    String color;
+    String breed;
     public Cat()  {
 
+    }
+    public Cat(String color, String breed) {
+        this.color = color;
+        this.breed = breed;
     }
 
     public Cat(int age, String name)  {
