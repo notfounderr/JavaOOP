@@ -2,7 +2,7 @@ package com.example.javaoop;
 
 import android.util.Log;
 
-public class Cat {
+public class Cat extends Animal{
     int age;
     String name;
     String color;
@@ -14,11 +14,9 @@ public class Cat {
         this.color = color;
         this.breed = breed;
     }
-
     public Cat(int age, String name)  {
         this.age = age;
         this.name = name;
-
     }
 
 
