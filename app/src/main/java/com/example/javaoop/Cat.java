@@ -3,7 +3,7 @@ package com.example.javaoop;
 import android.util.Log;
 
 public class Cat extends Animal{
-    int age;
+    protected int age;
     String name;
 
     String color;
@@ -23,6 +23,7 @@ public class Cat extends Animal{
 
     public void talk(){
         Log.i("talk()", "Meow! Hi! My name is " + name +
-    ", and i`m " + age + " years old.");
+                ", and i`m " + age + " years old.");
     }
 }
+
