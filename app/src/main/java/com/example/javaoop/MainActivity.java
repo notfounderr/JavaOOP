@@ -22,7 +22,13 @@ public class MainActivity extends AppCompatActivity {
         z = z++;
 
         myCat = new Cat(4, "Puma");
-        myCat.talk();
+        myCat.talk(3);
+
+
+        Cat vaska = new Cat();
+        vaska.talk();
+        vaska.talk("Meow, meow!");
+        Log.i("field age", String.valueOf(vaska.age));
 
 
         Cat murzik = new Cat(2, "Murza");
