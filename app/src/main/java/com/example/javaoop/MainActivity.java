@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.*;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     //private
@@ -26,14 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         Cat vaska = new Cat();
-        vaska.talk();
-        vaska.talk("Meow, meow!");
-        Log.i("field age", String.valueOf(vaska.age));
+
 
 
         Cat murzik = new Lion(2, "Murza");
-        murzik.talk();
-        murzik.breathe();
+
 
 
         Cat glasha = new Cat();
@@ -44,13 +43,59 @@ public class MainActivity extends AppCompatActivity {
         glasha.talk();
 
         Puma puma = new Puma();
-        puma.name = "Leo";
+        puma.age = 3;
+        puma.name = "Puma";
+
+
+        Puma bagira = new Puma();
+        bagira.age = 3;
+        bagira.name = "Puma";
+
+
 
         puma.breathe();
         puma.talk();
         puma.isAlive = true;
         Log.i("isAlive", String.valueOf(puma.isAlive));
         Log.i("breathe", "My name is " + puma.name + " and " + puma.breathe());
+
+        Lion lion = new Lion();
+        lion.age = 5;
+        lion.name = "tigr";
+        lion.talk();
+
+        ArrayList<Cat> cats = new ArrayList<>();
+        cats.add(vaska);
+        cats.add(bagira);
+        cats.add(puma);
+        cats.add(murzik);
+        cats.add(lion);
+
+        Cat cat = cats.get(0);
+        Cat cat1 = cats.get(1);
+        Cat cat2 = cats.get(2);
+        Cat cat3 = cats.get(3);
+        Cat cat4 = cats.get(4);
+
+        Puma puma1 = (Puma)cats.get(1);
+        puma1.talk();
+
+
+
+       Cat cat5 = cats.get(4);
+       if(cat5 instanceof Puma) {
+           Puma puma2 = (Puma)cat5;
+           puma2.talk();
+       }else{
+           Log.i("instanceof", "This is not Puma" );
+       }
+
+
+
+
+
+
+
     }
 
     void method(double x, int y) {

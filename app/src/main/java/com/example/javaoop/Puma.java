@@ -8,7 +8,7 @@ public class Puma extends Cat{
         this.name = "Puma";
     }
     public void talk(){
-        Log.i("talk()", "R-r-r! I'm puma. My name is" + name + ",and i'm" + age + " years old");
+        Log.i("talk()", "R-r-r! I'm puma. My name is " + name + ",and i'm " + age + " years old");
     }
 }
 
