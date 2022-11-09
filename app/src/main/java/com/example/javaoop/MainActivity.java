@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i("field age", String.valueOf(vaska.age));
 
 
-        Cat murzik = new Cat(2, "Murza");
+        Cat murzik = new Lion(2, "Murza");
         murzik.talk();
         murzik.breathe();
 
