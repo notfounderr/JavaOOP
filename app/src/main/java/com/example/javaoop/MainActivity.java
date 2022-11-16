@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Cat glasha = new Cat();
         glasha.age = 1;
         glasha.name = "Masha";
-        glasha.numberOfLegs = 4;
+
         Log.i("numberOfLegs", String.valueOf(glasha.numberOfLegs));
         glasha.talk();
 
@@ -82,20 +82,19 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-       Cat cat5 = cats.get(4);
-       if(cat5 instanceof Puma) {
-           Puma puma2 = (Puma)cat5;
-           puma2.talk();
-       }else{
-           Log.i("instanceof", "This is not Puma" );
-       }
+        Cat cat5 = cats.get(4);
+        if(cat5 instanceof Puma) {
+            Puma puma2 = (Puma)cat5;
+            puma2.talk();
+        }else{
+            Log.i("instanceof", "This is not Puma" );
+        }
+        Cat cat6 = new Cat();
+        Log.i("numberOfLegs", " cat6 number Of Legs " + cat6.numberOfLegs + Cat.whatCatsLike());
 
 
 
-
-
-
-
+        Log.i("numberOfLegs", " cat6 number Of Legs " + cat6.numberOfLegs + Cat.whatCatsLike());
     }
 
     void method(double x, int y) {
