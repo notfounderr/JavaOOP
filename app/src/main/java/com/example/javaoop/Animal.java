@@ -12,5 +12,4 @@ public class Animal {
         //Log.i("Breathe()", "I can breathe");
         return "I can breathe";
     }
-
 }

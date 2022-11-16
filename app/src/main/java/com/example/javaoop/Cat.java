@@ -34,7 +34,8 @@ public class Cat extends Animal{
 
     public void talk(String hello){ Log.i("talk()", "Meow! " + hello);
     }
-    public final static String whatCatsLike(){
+    public static String whatCatsLike(){
         return "i like playing, jumping and sometimes scratching";
     }
+
 }
