@@ -88,16 +88,15 @@ public class MainActivity extends AppCompatActivity {
         Log.i("numberOfLegs", " cat6 number Of Legs " + Cat.numberOfLegs + Cat.whatCatsLike());
 
 
+        Cat cat32 = new Cat(1, "Ceasar");
+        cat32.talk();
+        Cat cat33 = new Cat(5, "Petr");
+        cat33.talk();
+        Cat cat34 = new Cat(8, "Boris");
+        cat34.talk();
 
-        Log.i("numberOfLegs", " cat6 number Of Legs " + Cat.numberOfLegs + Cat.whatCatsLike());
-    }
-
-    void method(double x, int y) {
-        int a;
-        a = 1;
-        a = y + 1;
-        double d = x*2;
-        z = a + y;
+        Cat.CatMood catMood = new Cat().new CatMood();
+        Log.i("levelOfMood", String.valueOf(catMood.levelOfMood));
     }
 
 }
