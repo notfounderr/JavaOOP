@@ -106,6 +106,9 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("count ", "" + Cat.count);
 
+        cat35.catchMouse(1);
+        cat36.catchMouse(3);
+
     }
 
 }
