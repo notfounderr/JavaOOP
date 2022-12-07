@@ -32,6 +32,8 @@ public class Cat extends Animal{
         }
     }
 
+
+
     private class CatMood{
         int levelOfMood;
 
