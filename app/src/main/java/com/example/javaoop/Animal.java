@@ -2,11 +2,11 @@ package com.example.javaoop;
 
 import android.util.Log;
 
-public class Animal {
+public abstract class Animal {
     int numberOfLegs;
     boolean isAlive;
 
-
+    abstract public void draw();
 
     public String breathe(){
         //Log.i("Breathe()", "I can breathe");

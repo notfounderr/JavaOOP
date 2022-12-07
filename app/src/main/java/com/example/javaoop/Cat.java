@@ -4,7 +4,7 @@ import android.util.Log;
 
 import java.util.Locale;
 
-public class Cat extends Animal{
+public abstract class Cat extends Animal{
     int age;
     String name;
     final static int numberOfLegs= 4;
@@ -54,18 +54,7 @@ public class Cat extends Animal{
         catMood = new CatMood();
 
 
-        switch (catMood.levelOfMood) {
-            case 100:
-                helloText = "Meow! Im young and happy cat!:) My name is " + name + ", and i`m " + age + " years old.";
-                break;
-            case 50:
-                helloText = "Meow! Im happy cat! My name is " + name + ", and i`m " + age + " years old.";
-                break;
-            case 20:
-                helloText = "Meow! Im old and sick cat:( My name is " + name + ", and i`m " + age + " years old.";
-                break;
 
-        }
 
     }
     public Cat(String color, String breed) {
