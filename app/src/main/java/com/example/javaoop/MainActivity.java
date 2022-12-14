@@ -136,7 +136,6 @@ public class MainActivity extends AppCompatActivity implements Printable {
 
         }
         void printAnyObject(Printable printable) {
-
     }
 
     @Override

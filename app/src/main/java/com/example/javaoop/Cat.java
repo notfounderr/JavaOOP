@@ -102,6 +102,7 @@ public abstract class Cat extends Animal{
             String mouseVoice() {
                 return "Pi-pi-pi";
             }
+
         }
         Mouse mouse = new Mouse("gray", mouseWeight);
 

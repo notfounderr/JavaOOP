@@ -18,7 +18,6 @@ public class Lion extends Cat implements Printable{
     public void draw(){
         Log.i("draw()", "Draw Lion");
     }
-
     @Override
     public void print() {
 
