@@ -32,8 +32,6 @@ public abstract class Cat extends Animal{
         }
     }
 
-
-
     private class CatMood{
         int levelOfMood;
 
@@ -53,16 +51,10 @@ public abstract class Cat extends Animal{
 
         catMood = new CatMood();
 
-
-
-
     }
     public Cat(String color, String breed) {
         this.color = color;
         this.breed = breed;
-
-        catMood = new CatMood();
-
 
     }
     public Cat(int age, String name) {

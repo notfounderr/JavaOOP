@@ -2,7 +2,7 @@ package com.example.javaoop;
 
 import android.util.Log;
 
-public class Lion extends Cat{
+public class Lion extends Cat implements Printable{
 
     public Lion(int i, String murza) {
     }
@@ -16,6 +16,11 @@ public class Lion extends Cat{
     }
     @Override
     public void draw(){
+        Log.i("draw()", "Draw Lion");
+    }
+
+    @Override
+    public void print() {
 
     }
 }
