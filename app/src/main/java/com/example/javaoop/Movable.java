@@ -7,6 +7,7 @@ public interface Movable {
     default void move() {
             Log.i("move()", "Move Puma");
 
+
     }
     static void someMethod(){
         Log.i("some()", "some Puma");

@@ -130,7 +130,6 @@ public class MainActivity extends AppCompatActivity implements Printable {
 
 
 
-
         printAnyObject(new Lion());
         printAnyObject(new MainActivity());
 

@@ -6,7 +6,6 @@ public class Lion extends Cat implements Printable{
 
     public Lion(int i, String murza) {
     }
-
     public Lion() {
         Log.i("constructor", "Constructor Lion");
     }

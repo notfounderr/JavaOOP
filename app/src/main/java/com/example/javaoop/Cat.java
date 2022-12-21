@@ -11,7 +11,6 @@ public abstract class Cat extends Animal{
     static int count = 0;
 
 
-
     String helloText;
     CatMood catMood;
 
