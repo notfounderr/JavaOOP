@@ -5,13 +5,15 @@ import android.util.Log;
 public class Puma extends Cat implements Movable, Printable{
     private String pumaHelloText;
 
+
+
     @Override
     public void draw(){
         Log.i("draw()", "Draw Puma");
     }
     @Override
     public void move() {
-        Log.i("move()", "Move Puma");
+        Log.i("move()", "Move overridden Puma");
     }
 
     @Override

@@ -12,7 +12,7 @@ public class Lion extends Cat implements Printable{
     }
 
     public void talk() {
-        Log.i("talk()", "R-r-r! I'm lion. My name is " + name + ",and i'm " + age + " years old" + Cat.whatCatsLike());
+        Log.i("talk()", "R-r-r! I'm lion. My name is " + name + ",and i'm " + age + " years old" + Cat.whatCatsLike()) ;
     }
     @Override
     public void draw(){

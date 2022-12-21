@@ -125,7 +125,11 @@ public class MainActivity extends AppCompatActivity implements Printable {
         Cat tim = new Lion(4,"Tim");
         tim.age = 3;
         tim.name = "Tim";
+
         tim.talk();
+
+
+
 
         printAnyObject(new Lion());
         printAnyObject(new MainActivity());
@@ -133,13 +137,22 @@ public class MainActivity extends AppCompatActivity implements Printable {
         Printable printable = new Puma();
         printable.print();
         ((Puma)printable).move();
+        Movable.someMethod();
 
+        Puma puma = new Puma();
+        Log.i("speedOfMoving", "" + puma.speedOfMoving);
+
+        Log.i("speedOfMoving", "" + ((Puma)printable).speedOfMoving);
+
+        Log.i("speedOfMoving", "" + Movable.speedOfMoving);
         }
         void printAnyObject(Printable printable) {
     }
+
 
     @Override
     public void print() {
 
     }
+
 }

@@ -48,7 +48,6 @@ public abstract class Cat extends Animal{
     private String color;
     private String breed;
     public Cat()  {
-
         catMood = new CatMood();
 
     }
@@ -56,15 +55,19 @@ public abstract class Cat extends Animal{
         this.color = color;
         this.breed = breed;
 
+
     }
-    public Cat(int age, String name) {
+    public Cat(int age, String name, String breed, String color) {
         this.age = age;
         this.name = name;
+        this.breed = breed;
+        this.color = color;
+
         catMood = new CatMood();
 
         switch (catMood.levelOfMood) {
             case 100:
-                helloText = "Meow! Im young and happy cat!:) My name is " + name + ", and i`m " + age + " years old.";
+                helloText = "Meow! Im young and happy cat!:) My name is " + name + ", and i`m " + age + " years old. and  ";
                 break;
             case 50:
                 helloText = "Meow! Im happy cat! My name is " + name + ", and i`m " + age + " years old.";
@@ -79,6 +82,9 @@ public abstract class Cat extends Animal{
 
     public void talk(){
         Log.i("talk()",  helloText);
+    }
+    public void talk(String breed, String color){
+        Log.i("talk()",  "Hello! I'm" + name + "my breed and color is " + breed + color);
     }
     public void talk(int age){
         Log.i("talk()", "Meow! i`m " + age + " years old.");
